@@ -27,7 +27,40 @@ html {
 }
 
 .header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.header-menu {
+    margin-left: -200px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    padding: 0 20px;
+}
+
+.menu-link1 {
+    font-family: 'Gelasio' sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #1B75BB;
+    text-decoration: none;
+}
+
+.menu-link {
+    font-family: 'Gelasio' sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(8, 31, 50, 0.7);
+    text-decoration: none;
 }
 
 .logo {
