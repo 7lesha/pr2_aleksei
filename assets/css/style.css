@@ -68,7 +68,7 @@ html {
     background-size: cover;
     min-height: 690px;
     padding: 214px 0 30px;
-    margin-bottom: 201px;
+    margin-bottom: 336px;
 }
 
 .first-section-top {
@@ -157,24 +157,27 @@ html {
     margin: 0 auto;
     max-width: 1301px;
     display: flex;
+    margin-bottom: 140px;
 }
 
 .img2 {
-
+    
 }
 
 .img3 {
     position: absolute;
-    margin: -70px 0 0 -340px;
+    margin: -51px 0 0 -433px;
+    z-index: -1;
 }
 
 .img4 {
     position: absolute;
-    margin: 160px 0 0 -720px;
+    margin: 176px 0 0 -716px;
+    z-index: -1;
 }
 
 .text {
-    padding-bottom: 80px;
+    padding: 23px 0 0 155px;
 }
 
 .block-text {
