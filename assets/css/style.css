@@ -18,6 +18,10 @@ html {
     padding: 0 15px;
 }
 
+.container--big {
+    max-width: 1301px;
+}
+
 .header {
     position: absolute;
     left: 0;
@@ -33,7 +37,8 @@ html {
 }
 
 .header-menu {
-    margin-left: -200px;
+    /*margin-left: -200px;*/
+    padding-right: 120px;
 }
 
 .menu {
@@ -41,34 +46,36 @@ html {
     display: flex;
 }
 
-.menu-item {
-    padding: 0 20px;
-}
-
-.menu-link1 {
-    font-family: 'Gelasio' sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    color: #1B75BB;
-    text-decoration: none;
-}
-
 .menu-link {
-    font-family: 'Gelasio' sans-serif;
+    display: inline-block;
+    font-family: 'Gelasio', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     color: rgba(8, 31, 50, 0.7);
     text-decoration: none;
+    padding: 5px 20px;
+}
+
+.menu-link.active {
+    color: #1B75BB;
+    font-weight: 700;
+}
+
+.menu-link:hover {
+    color: #1B75BB;
 }
 
 .first-section {
     background: url(../img/img1.jpg) center no-repeat;  
     background-size: cover;
+    margin-bottom: 336px;
+}
+
+.first-section .container {
+    position: relative;
     min-height: 690px;
     padding: 214px 0 30px;
-    margin-bottom: 336px;
 }
 
 .first-section-top {
@@ -115,21 +122,42 @@ html {
     padding: 15px 31px;
 }
 
+.btn:hover {
+    background: #06426a;
+}
+
 .first-block {
     padding: 24px 49px 24px 21px; 
     display: flex;
     justify-content: space-between;
-    margin: 48px 0 0 -49px; 
+    /*margin: 48px 0 0 -49px; */
     max-width: 687px;
     background: rgba(255, 255, 255, 0.21);
     backdrop-filter: blur(70px);
     border-radius: 10px;
     position: absolute;
+    left: -30px;
+    bottom: -50px;
 }
 
 .block {
     padding-right: 30px;
     padding-left: 28px;
+    position: relative;
+}
+
+.block::before {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    width: 2px;
+    height: 34px;
+    background-color: rgba(157, 172, 184, 0.4);
+}
+
+.block:first-child::before {
+    display: none;
 }
 
 .block-h4 {
@@ -145,19 +173,26 @@ html {
     color: rgba(8, 31, 50, 0.8);
 }
 
-.hr {
-    margin-top: 14px;
-    size: 700px;
-    width: 2px;
-    max-height: 34px; 
-    color: rgba(157, 172, 184, 0.4); 
-}
-
 .main {
-    margin: 0 auto;
     max-width: 1301px;
     display: flex;
     margin-bottom: 140px;
+}
+
+.images {
+    position: relative;
+}
+
+.images::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: -40px;
+    bottom: -40px;
+    height: 228px;
+    width: 228px;
+    background: url("../img/img4.png") center no-repeat;
+    background-size: cover;
 }
 
 .img2 {
@@ -166,14 +201,9 @@ html {
 
 .img3 {
     position: absolute;
-    margin: -51px 0 0 -433px;
+    top: -50px;
+    right: -50px;
     border-radius: 10px;
-    z-index: -1;
-}
-
-.img4 {
-    position: absolute;
-    margin: 176px 0 0 -716px;
     z-index: -1;
 }
 
@@ -192,7 +222,7 @@ html {
 }
 
 .block-h2 {
-    font-family: 'Gelasio' sans-serif;
+    font-family: 'Gelasio', sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 140%;
@@ -202,13 +232,18 @@ html {
 }
 
 .why-h2 {
-    font-family: 'Gelasio' sans-serif;
+    font-family: 'Gelasio', sans-serif;
     font-weight: 500;
     font-size: 32px;
     text-align: center;
     line-height: 140%;
     color: #081F32;
     margin-bottom: 25px;
+}
+
+.why-text-block {
+    display: flex;
+    justify-content: center;
 }
 
 .why-text {
@@ -218,43 +253,41 @@ html {
     color: rgba(8, 31, 50, 0.6);
     text-align: center;
     margin-bottom: 60px;
-    margin-left: 165px;
 }
 
 .why-block {
     display: flex;
     justify-content: space-between;
+    margin: 0 0 110px;
 }
 
 .blocks {
     width: 23%;
     border: 1px solid rgba(0, 0, 0, 0.1); 
     box-sizing: border-box;
-    box-shadow: 0px 4px 30px rgba(199, 199, 199, 0.25); 
+    box-shadow: 0 4px 30px rgba(199, 199, 199, 0.25);
     border-radius: 5px;
     padding: 21px 0 18px 0;
-    margin-bottom: 140px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .imgs {
     margin-bottom: 40px;
-    margin-left: 94px; 
 }
 
 .blocks-h3 {
-    font-family: 'Gelasio' sans-serif;
+    font-family: 'Gelasio', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
-    text-align: center;
     color: #081F32;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .blocks-text {
     font-size: 18px;
     line-height: 160%;
-    text-align: center;
     color: rgba(8, 31, 50, 0.6);
 }
 
