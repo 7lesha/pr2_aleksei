@@ -290,6 +290,15 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+
+    .container {
+        max-width: 738px;
+    }
+
+    .menu-link {
+        padding: 5px 10px;
+    }
+
     .first-section-title {
         font-size: 47px;
     }
@@ -302,9 +311,76 @@ html {
         padding: 174px 0 60px;
         min-height: 600px;
     }
+
+    .header-menu {
+        padding-right: 10px;
+    }
+
+    .first-section .container {
+        padding: 140px 0 30px 30px;
+    }
+
+    .first-block {
+        left: -30px;
+        bottom: -110px;
+    }
+
+    .images::before {
+        left: -15px;
+        bottom: 30px;
+        height: 130px;
+        width: 130px;
+    }
+
+    .text {
+        padding: 23px 0 0 80px;
+    }
+
+    .block-text {
+        font-size: 18px;
+    }
+
+    .block-h2 {
+        font-size: 26px;
+    }
+
+    .why-h2 {
+        font-size: 26px;
+    }
+
+    .why-text {
+        font-size: 16px;
+        max-width: 500px;
+    }
+
+    .why-block {
+        flex-wrap: wrap;
+        padding: 0 60px 0 60px;
+    }
+
+    .blocks {
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 575px) {
+
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .menu-link {
+        font-size: 16px;
+        padding: 5px 10px 20px;
+    }
+
+    .btn {
+        padding: 13px 20px;
+    }
+
     .first-section-title {
         font-size: 32px;
     }
@@ -316,5 +392,78 @@ html {
     .first-section {
         padding: 154px 0 30px;
         min-height: 500px;
+    }
+
+    .first-block {
+        padding: 20px 25px 20px 21px;
+        left: -10px;
+        bottom: -50px;
+    }
+
+    .block {
+        padding-right: 10px;
+        padding-left: 10px;
+        position: relative;
+    }
+
+    .block-p {
+        font-size: 12px;
+    }
+
+    .first-section {
+        margin-bottom: 200px;
+    }
+
+    .img3 {
+        top: -20px;
+        right: -15px;
+    }
+
+    .images::before {
+        left: -15px;
+        bottom: -10px;
+        height: 120px;
+        width: 120px;
+    }
+
+    .main {
+        display: flex;
+        margin-bottom: 140px;
+        flex-wrap: wrap; 
+    }
+
+    .text {
+        padding: 30px 0 0 0px;
+    }
+
+    .block-text {
+        font-size: 16px;
+    }
+
+    .block-h2 {
+        font-size: 16px;
+    }
+
+    .why-block {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 0 110px;
+    }
+
+    .why-h2 {
+        font-size: 18px;
+    }
+
+    .blocks {
+        width: 90%;
+    }
+
+    .blocks-h3 {
+        font-size: 18px;
+    }
+
+    .blocks-text {
+        font-size: 16px;
     }
 }
