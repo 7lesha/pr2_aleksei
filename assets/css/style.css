@@ -831,6 +831,11 @@ html {
         justify-content: center;
     }
 
+    .email-input {
+        padding: 15px 20px 15px 20px;
+        width: 225px;
+    }
+
     .footer-inp {
         padding: 15px 20px 15px 20px;
         width: 225px;
