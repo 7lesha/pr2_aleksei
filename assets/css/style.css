@@ -467,3 +467,10 @@ html {
         font-size: 16px;
     }
 }
+
+@media screen and (max-width: 370px) {
+    .menu-link {
+        font-size: 15px;
+        padding: 5px 5px 20px;
+    }
+}
