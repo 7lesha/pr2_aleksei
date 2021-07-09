@@ -515,6 +515,84 @@ html {
     width: 400px;
 }
 
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 145px;
+}
+
+.footer-block {
+
+}
+
+.footer-logo-p {
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(8, 31, 50, 0.7);
+    max-width: 258px;
+    margin-bottom: 30px;
+}
+
+.footer-p {
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.06em;
+    color: rgba(8, 31, 50, 0.7);
+    margin-bottom: 15px;
+}
+
+.footer-imgs {
+    display: flex;
+}
+
+.footer-img {
+    margin-right: 25px;
+}
+
+.footer-h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #081F32;
+    margin-bottom: 30px;
+}
+
+.footer-ul {
+
+}
+
+.footer-li {
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(8, 31, 50, 0.7);
+}
+
+.footer-a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(8, 31, 50, 0.7);
+    text-decoration: none;
+}
+
+.footer-input {
+    display: flex;
+}
+
+.footer-inp {
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(8, 31, 50, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px 30px 15px 30px;
+    width: 325px;
+}
+
 @media screen and (max-width: 768px) {
 
     .container {
@@ -748,6 +826,15 @@ html {
     .email-input {
         width: 300px;
     }
+
+    .clients {
+        justify-content: center;
+    }
+
+    .footer-inp {
+        padding: 15px 20px 15px 20px;
+        width: 225px;
+    }
 }
 
 @media screen and (max-width: 370px) {
@@ -758,8 +845,13 @@ html {
     }
 
     .email-input {
-        width: 200px;
-        padding: 5px 10px 5px 10px;
+        width: 190px;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .footer-inp {
+        padding: 5px 5px 5px 5px;
+        width: 190px;
     }
 }
 
