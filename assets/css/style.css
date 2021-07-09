@@ -522,10 +522,6 @@ html {
     margin-bottom: 145px;
 }
 
-.footer-block {
-
-}
-
 .footer-logo-p {
     font-size: 18px;
     line-height: 150%;
@@ -544,6 +540,7 @@ html {
 
 .footer-imgs {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .footer-img {
@@ -556,10 +553,6 @@ html {
     line-height: 150%;
     color: #081F32;
     margin-bottom: 30px;
-}
-
-.footer-ul {
-
 }
 
 .footer-li {
