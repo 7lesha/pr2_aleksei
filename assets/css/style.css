@@ -74,7 +74,7 @@ html {
 .first-section .container {
     position: relative;
     min-height: 690px;
-    padding: 214px 0 30px;
+    padding: 214px 0 30px 30px;
 }
 
 .first-section-top {
