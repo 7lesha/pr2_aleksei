@@ -74,7 +74,7 @@ html {
 .first-section .container {
     position: relative;
     min-height: 690px;
-    padding: 214px 0 30px 30px;
+    padding: 214px 0 30px 15px;
 }
 
 .first-section-top {
@@ -289,6 +289,232 @@ html {
     color: rgba(8, 31, 50, 0.6);
 }
 
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 140px;
+}
+
+.gallery-text {
+    width: 49%;
+    padding: 47px 0 0 0;
+}
+
+.gallery-h {
+    font-family: 'Gelasio', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    color: #081F32;
+    margin-bottom: 25px;
+}
+
+.gallery-p {
+    max-width: 440px;
+    font-size: 18px;
+    line-height: 160%;
+    color: #081F32;
+    margin-bottom: 30px;
+}
+
+.gallery-imgs {
+    margin-bottom: 23px;
+    position: relative;
+}
+
+.gallery-imgs img {
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.gallery-room {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(226, 226, 226, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 23px 28px 23px 28px;
+}
+
+.gallery-room-text {
+    font-family: 'Gelasio', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #081F32;
+    margin-bottom: 10px;
+}
+
+.gallery-room-text span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(8, 31, 50, 0.8);
+}
+
+.gallery-btn {
+    font-family: 'Gelasio', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    background: #1B75BB;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.gallery-text a {
+    margin-bottom: 20px;
+}
+
+.gallery-btn:hover {
+    background: #06426a;
+}
+
+.client-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 88px;
+}
+
+.client-text h2 {
+    font-family: 'Gelasio;', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    color: #081F32;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 140px;
+}
+
+.client {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 28px 40px 27px 27px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.client img {
+    margin-bottom: 25px;
+}
+
+.client-p-second::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 170px;
+    height: 20px;
+    width: 24px;  
+    background: url("../img/img18.png") center no-repeat;
+}
+
+.client-p::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 170px;
+    height: 20px;
+    width: 24px;  
+    background: url("../img/img17.png");
+    opacity: 0.5;
+
+} 
+
+.client-p {
+    font-size: 18px;
+    line-height: 160%;
+    color: rgba(8, 31, 50, 0.6);
+    max-width: 282px;
+    margin-bottom: 30px;
+}
+
+.client-name {
+    font-family: 'Gelasio', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(8, 31, 50, 0.7);
+    margin-bottom: 5px;
+}
+
+.client-mail {
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(8, 31, 50, 0.7);
+}
+
+.client-p-second {
+    font-size: 18px;
+    line-height: 160%;
+    color: #081F32;
+    max-width: 282px;
+    margin-bottom: 30px;
+}
+
+.client-name-second {
+    font-family: 'Gelasio' sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(8, 31, 50, 0.9);
+    margin-bottom: 5px;
+}
+
+.client-mail-second {
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(8, 31, 50, 0.7);
+}
+
+.email-p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(8, 31, 50, 0.8);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.email-h {
+    font-family: 'Gelasio',sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    color: #081F32;
+    margin-bottom: 50px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 194px;
+}
+
+.email-input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #081F32;
+    padding: 15px 30px 15px 30px;
+    width: 400px;
+}
+
 @media screen and (max-width: 768px) {
 
     .container {
@@ -360,6 +586,34 @@ html {
 
     .blocks {
         width: 45%;
+    }
+
+    .gallery-text {
+        width: 70%;
+    }
+
+    .gallery-p {
+        max-width: 100%;
+    }
+
+    .gallery-h {
+        font-size: 26px;
+    }
+
+    .gallery-p {
+        font-size: 17px;
+    }
+
+    .gallery-room-text {
+        font-size: 17px;
+    }
+
+    .email-p {
+        font-size: 18px;
+    }
+
+    .email-h {
+        font-size: 26px;
     }
 }
 
@@ -466,11 +720,58 @@ html {
     .blocks-text {
         font-size: 16px;
     }
+
+    .gallery-p {
+        font-size: 16px;
+    }
+
+    .gallery-room-text {
+        font-size: 16px;
+    }
+
+    .gallery-room {
+        padding: 13px 18px 13px 18px;
+    }
+
+    .client-text h2 {
+        font-size: 18px;
+    }
+
+    .email-p {
+        font-size: 16px;
+    }
+
+    .email-h {
+        font-size: 18px;
+    }
+
+    .email-input {
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 370px) {
+
     .menu-link {
         font-size: 15px;
         padding: 5px 5px 20px;
+    }
+
+    .email-input {
+        width: 200px;
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .gallery-text {
+        text-align: center;
     }
 }
